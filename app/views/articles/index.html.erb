@@ -1,3 +1,4 @@
+ HEAD
 <h1>Listing all articles</h1>
 	<p>
 	<%= link_to "Create new article", new_article_path %>
@@ -16,3 +17,24 @@
 		</tr>
 		<% end %>
 	</table>
+=======
+<h1>Listing all the articles</h1>
+<p>
+  <%= link_to "Create new article", new_article_path %>
+</p>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+  </tr>
+  <% @articles.each do |article| %>
+  <tr>
+    <td><%= article.title %></td>
+    <td><%= article.description %></td>
+    <td><%= link_to 'Edit', edit_article_parth(article) %></td>
+    <td><%= link_to 'Show', article_path(article) %></td>
+    <td><%= link_to 'Delete', article_path(article), method: :delete, data:{confirm: "Are you sure?"} %></td>
+  </tr>
+  <% end %>
+</table>
+>>>>>>> bd2383f5241cc430a4ba98b1216bd0e26f046b5c

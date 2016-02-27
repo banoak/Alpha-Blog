@@ -1,5 +1,6 @@
 == README
 
+<<<<<<< HEAD
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
@@ -24,5 +25,10 @@ Things you may want to cover:
 * ...
 
 
+=======
+Learning Ruby on Rails first project Alpha Blog.
+
+Will eventually turn into portfolio and main blog. 
+>>>>>>> bd2383f5241cc430a4ba98b1216bd0e26f046b5c
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
